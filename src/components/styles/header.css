@@ -1,0 +1,40 @@
+.colors {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+
+button.disable {
+  pointer-events: none;
+}
+
+.bg-color-change {
+  background-color: #000000;
+  transition: background-color 0.5s ease;
+}
+
+.colors .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.colors .container .container {
+  display: inline-block;
+}
+
+.colors .navbar-collapse form {
+  width: 50%;
+  margin: auto;
+}
+
+.search-bar {
+  width: 50%;
+  max-width: 460px;
+}
+
+@media (max-width: 767px) {
+  .colors .container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}

@@ -1,0 +1,42 @@
+.card-movie {
+  background-color: #0f0f0f;
+}
+
+.card-img-wrapper:hover {
+  transform: scale(103%);
+  transition: 0.2s;
+}
+
+.img-movie {
+  position: relative;
+  border-radius: 6px;
+}
+
+.img-movie:hover {
+  filter: brightness(60%);
+}
+
+.movie-title {
+  color: white;
+}
+
+.movie-title:hover {
+  color: #dc3545;
+}
+
+.movie-release {
+  font-size: 12px;
+  color: rgb(197, 197, 197);
+}
+
+.rating {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 6px;
+  padding: 2px 8px 2px 6px;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 6px;
+  font-size: 14px;
+}

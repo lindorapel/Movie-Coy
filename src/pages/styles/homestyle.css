@@ -1,0 +1,9 @@
+.more-popular {
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+}
+
+.more-popular:hover {
+  color: #dc3545;
+}
