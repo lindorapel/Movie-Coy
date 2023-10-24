@@ -15,11 +15,10 @@ const HeroCarousel = () => {
     const getPopularMovies = async () => {
       try {
         const response = await axios.get(
-          "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1",
+          `${import.meta.env.VITE_API_URL}/movie/popular`,
           {
             headers: {
-              Authorization:
-                "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxN2JjYTQ1ZWNhYWRkMGZkZTAxM2QzYzM0MmZlZDRjYyIsInN1YiI6IjY1MTQyMzk3OWI4NjE2MDBhY2FkYjQxZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.yDIoRNR2kWUEatfWvVn-tl8PUL8RjgYfNQ162riMp04",
+              Authorization: `Bearer ${import.meta.env.VITE_API_AUTH_TOKEN}`,
             },
           }
         );
