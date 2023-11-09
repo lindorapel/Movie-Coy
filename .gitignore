@@ -24,4 +24,5 @@ dist-ssr
 *.sw?
 
 # env token
+/node_modules
 .env

@@ -51,7 +51,7 @@ const Home = () => {
     };
 
     getPopularMovies();
-  }, [errors]);
+  }, []);
 
   if (errors.isError) {
     return <h1>{errors.message}</h1>;

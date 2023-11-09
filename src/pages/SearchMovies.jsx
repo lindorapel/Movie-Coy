@@ -52,7 +52,7 @@ const SearchMovies = () => {
     if (query) {
       search(query);
     }
-  }, [query]);
+  }, []);
 
   return (
     <Container className="" style={{ paddingBlock: "80px" }}>

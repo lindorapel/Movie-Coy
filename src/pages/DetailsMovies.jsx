@@ -29,6 +29,7 @@ const DetailsMovies = () => {
             },
           }
         );
+        console.log(response.data);
         setMovieData(response.data);
         const videos = response.data.videos.results;
         const trailer = videos.find((video) => video.type === "Trailer");
@@ -42,7 +43,7 @@ const DetailsMovies = () => {
     };
 
     fetchData();
-  }, [movieId]);
+  }, []);
 
   const handleShowTrailer = (event) => {
     event.preventDefault();
